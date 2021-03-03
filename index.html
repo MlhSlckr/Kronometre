@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1><span id="saat">00</span>
+      <p class="time">saat</p>:<span id="dakika">00</span>
+      <p class="time">dakika</p>:<span id="saniye">00</span>
+      <p class="time">saniye</p>:<span id="salise">00</span>
+      <p class="time">salise</p>
+    </h1>
+    <form action="">
+      <label for="">
+        <input type="number" min="0" max="24" id="secilen-st" value="00" class="stopwatch">
+      </label>
+      <label for="">
+        <input type="number" min="0" max="59" id="secilen-dk" value="00" class="stopwatch">
+      </label>
+      <label for="">
+        <input type="number" min="0" max="59" id="secilen-sn" value="00" class="stopwatch">
+      </label>
+      <label for="">
+        <input type="number" min="0" max="59" id="secilen-sl" value="00" class="stopwatch">
+      </label>
+    </form>
+    <button class="event" id="baslat">BAŞLAT</button>
+    <button class="event" id="sıfırla">SIFIRLA</button>
+  </div>
+  <div class="timeOver flex">
+    <div class="content">
+      <p class="timeText">SÜRENİZ DOLDU</p>
+      <a href="#" class="timeButton">Tamam</a>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
